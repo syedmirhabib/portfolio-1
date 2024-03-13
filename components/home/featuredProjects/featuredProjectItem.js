@@ -22,7 +22,6 @@ const FeaturedProjectItem = (props) => {
         <div className={classes.row}>
           <div className={classes.columnRight}>
             <Link href={`/projects/${project.slug}`}>
-              <a>
                 <div className={classes.card}>
                   <Image
                     src={`/portfolio/images/projects/${project.image}`}
@@ -31,7 +30,6 @@ const FeaturedProjectItem = (props) => {
                     alt={project.title}
                   />
                 </div>
-              </a>
             </Link>
           </div>
 
@@ -52,10 +50,9 @@ const FeaturedProjectItem = (props) => {
                 </a>
               )}
               <Link href={`/projects/${project.slug}`}>
-                <a>
                   <i className='fa fa-circle-info'></i>
                   Project details
-                </a>
+              
               </Link>
             </div>
           </div>

@@ -14,7 +14,7 @@ const ProjectItem = (props) => {
       layout
       className={classes.card}>
       <Link href={`/projects/${project.slug}`}>
-        <a>
+        
           <div className={classes.cardContent}>
             <h4>{project.title}</h4>
             <small className='mb-10 d-block'>
@@ -38,7 +38,7 @@ const ProjectItem = (props) => {
               </div>
             )}
           </div>
-        </a>
+        
       </Link>
 
       <p>{project.description}</p>
@@ -57,10 +57,10 @@ const ProjectItem = (props) => {
           </a>
         )}
         <Link href={`/projects/${project.slug}`}>
-          <a>
+          
             <i className='fa fa-circle-info'></i>
             Details
-          </a>
+        
         </Link>
       </div>
     </motion.div>
